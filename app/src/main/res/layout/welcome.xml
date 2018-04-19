@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:background="@drawable/bkg"
+    android:orientation="vertical"
+    tools:context="apps.mfonobongumondia.com.tictactoe.Welcome">
+
+    <Button
+        android:id="@+id/normalMode"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:layout_marginTop="110dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:onClick="@string/normal"
+        android:text="@string/board_3_x_3"
+        android:textColor="#5D4037" />
+
+    <Button
+        android:id="@+id/UltimateMode2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/normalMode"
+        android:layout_below="@+id/normalMode"
+        android:layout_marginTop="41dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:onClick="@string/ultimate2"
+        android:text="@string/board_5_x_5"
+        android:textColor="#5D4037" />
+
+    <Button
+        android:id="@+id/AboutBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/UltimateMode2"
+        android:layout_below="@+id/UltimateMode2"
+        android:layout_marginTop="42dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:onClick="@string/about"
+        android:text="Instructions"
+        android:textColor="#5D4037" />
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AboutBtn"
+        android:layout_below="@+id/AboutBtn"
+        android:layout_marginTop="41dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:onClick="@string/exit"
+        android:text="@string/exitText"
+        android:textColor="#5D4037" />
+</RelativeLayout>

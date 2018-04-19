@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="exitText">Exit</string>
+
+    <string name="exit">exit_click</string>
+    <string name="about">about_click</string>
+    <string name="normal">normal_click</string>
+    <string name="ultimate">ultimate_click</string>
+    <string name="ultimate2">ultimate_click2</string>
+    <string name="developed_by_mfonobong_umondia_in_the_alc_2_0_climb_challenge_2018">Developed by Mfonobong Umondia in the ALC 2.0 Climb Challenge 2018</string>
+    <string name="board_5_x_5">Board 5 x 5</string>
+    <string name="instructions">Instructions</string>
+    <string name="board_3_x_3">Board 3 x 3</string>
+    <string name="place_three_or_more_x_s_or_o_depending_on_the_square_grid_in_a_horizontal_vertical_or_diagonal_row">Place three or more ‘x’s or ‘o’ depending on the square grid in a horizontal, vertical or diagonal row.</string>
+    <string name="aboutInformation">Welcome to the Tic Tac Toe game!The current version of game consists only of two modes:-</string>
+
+    <string name="developerInfo">Developed by Joseph. 2018. All right reserved </string>
+
+    <string name="about_activity_label">Tic Tac Toe - About</string>
+</resources>
