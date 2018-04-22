@@ -57,39 +57,39 @@ public class Ultimate extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ultimate);
 
-        b00 = (Button) findViewById(R.id.b00);
-        b01 = (Button) findViewById(R.id.b01);
-        b02 = (Button) findViewById(R.id.b02);
-        b03 = (Button) findViewById(R.id.b03);
-        b04 = (Button) findViewById(R.id.b04);
+        b00 = findViewById(R.id.b00);
+        b01 = findViewById(R.id.b01);
+        b02 = findViewById(R.id.b02);
+        b03 = findViewById(R.id.b03);
+        b04 = findViewById(R.id.b04);
 
-        b10 = (Button) findViewById(R.id.b10);
-        b11 = (Button) findViewById(R.id.b11);
-        b12 = (Button) findViewById(R.id.b12);
-        b13 = (Button) findViewById(R.id.b13);
-        b14 = (Button) findViewById(R.id.b14);
+        b10 = findViewById(R.id.b10);
+        b11 = findViewById(R.id.b11);
+        b12 = findViewById(R.id.b12);
+        b13 = findViewById(R.id.b13);
+        b14 = findViewById(R.id.b14);
 
-        b20 = (Button) findViewById(R.id.b20);
-        b21 = (Button) findViewById(R.id.b21);
-        b22 = (Button) findViewById(R.id.b22);
-        b23 = (Button) findViewById(R.id.b23);
-        b24 = (Button) findViewById(R.id.b24);
+        b20 = findViewById(R.id.b20);
+        b21 = findViewById(R.id.b21);
+        b22 = findViewById(R.id.b22);
+        b23 = findViewById(R.id.b23);
+        b24 = findViewById(R.id.b24);
 
-        b30 = (Button) findViewById(R.id.b30);
-        b31 = (Button) findViewById(R.id.b31);
-        b32 = (Button) findViewById(R.id.b32);
-        b33 = (Button) findViewById(R.id.b33);
-        b34 = (Button) findViewById(R.id.b34);
+        b30 = findViewById(R.id.b30);
+        b31 = findViewById(R.id.b31);
+        b32 = findViewById(R.id.b32);
+        b33 = findViewById(R.id.b33);
+        b34 = findViewById(R.id.b34);
 
-        b40 = (Button) findViewById(R.id.b40);
-        b41 = (Button) findViewById(R.id.b41);
-        b42 = (Button) findViewById(R.id.b42);
-        b43 = (Button) findViewById(R.id.b43);
-        b44 = (Button) findViewById(R.id.b44);
+        b40 = findViewById(R.id.b40);
+        b41 = findViewById(R.id.b41);
+        b42 = findViewById(R.id.b42);
+        b43 = findViewById(R.id.b43);
+        b44 = findViewById(R.id.b44);
 
 
-        bReset = (Button) findViewById(R.id.bReset);
-        tvInfo = (TextView) findViewById(R.id.tvInfo);
+        bReset = findViewById(R.id.bReset);
+        tvInfo = findViewById(R.id.tvInfo);
 
         bReset.setOnClickListener(this);
 

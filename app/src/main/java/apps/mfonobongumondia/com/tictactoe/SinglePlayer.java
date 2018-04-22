@@ -9,42 +9,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class SinglePlayer extends AppCompatActivity implements View.OnClickListener {
-/*
-    DESCRIPTION OF VARIABLES
-
-    TAG ---------> Used for log debugging
-    PLAYER_X ----> Variable to identify player turn
-    TURN_COUNT --> Variable to keep count of number of turns
-    b00 - b22 ---> Button for each 3x3 box
-    tvInfo ------> Information regarding game status
-    boardStatus -> 2-d array to identify board status
-        -1 means, No one has played on that box yet
-        0 means, Player 0 has played on that box
-        1 means, Player X has played on that box
-    */
-
-    /*
-    DESCRIPTION OF METHODS
-
-    onClick --------> Called whenever any box or reset button is clicked.
-        This method places either X or 0 according to player turn
-        and updates other information
-
-    checkWinner ----> This method checks the board status and identifies the winner
-        It checks for all the 3 rows, 3 columns and 2 diagonals
-
-    resetBoard -----> This method is called whenever reset button is pressed.
-        updates everything to initial values of game
-
-    enableAllBoxes -> This method can either enable or disable all boxes
-
-    setInfo --------> This method updates the string in TextView
-
-    result ---------> This method works whenever a player wins or game draws
-
-    initializeBoardStatus -> Method which set the value of integer array to -1
-
-    */
 
     private final static String TAG = SinglePlayer.class.getSimpleName();
     boolean PLAYER_X = true;
@@ -74,20 +38,20 @@ public class SinglePlayer extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.singleplayer);
 
-        b00 = (Button) findViewById(R.id.b00);
-        b01 = (Button) findViewById(R.id.b01);
-        b02 = (Button) findViewById(R.id.b02);
+        b00 = findViewById(R.id.b00);
+        b01 = findViewById(R.id.b01);
+        b02 = findViewById(R.id.b02);
 
-        b10 = (Button) findViewById(R.id.b10);
-        b11 = (Button) findViewById(R.id.b11);
-        b12 = (Button) findViewById(R.id.b12);
+        b10 = findViewById(R.id.b10);
+        b11 = findViewById(R.id.b11);
+        b12 = findViewById(R.id.b12);
 
-        b20 = (Button) findViewById(R.id.b20);
-        b21 = (Button) findViewById(R.id.b21);
-        b22 = (Button) findViewById(R.id.b22);
+        b20 = findViewById(R.id.b20);
+        b21 = findViewById(R.id.b21);
+        b22 = findViewById(R.id.b22);
 
-        bReset = (Button) findViewById(R.id.bReset);
-        tvInfo = (TextView) findViewById(R.id.tvInfo);
+        bReset = findViewById(R.id.bReset);
+        tvInfo = findViewById(R.id.tvInfo);
 
         bReset.setOnClickListener(this);
 
@@ -275,18 +239,18 @@ public class SinglePlayer extends AppCompatActivity implements View.OnClickListe
         //First diagonal
         if (boardStatus[0][0] == boardStatus[1][1] && boardStatus[0][0] == boardStatus[2][2]) {
             if (boardStatus[0][0] == 1) {
-                result("Player X winner\nFirst Diagonal");
+                result("Player X winner");
             } else if (boardStatus[0][0] == 0) {
-                result("Player 0 winner\nFirst Diagonal");
+                result("Player 0 winner");
             }
         }
 
         //Second diagonal
         if (boardStatus[0][2] == boardStatus[1][1] && boardStatus[0][2] == boardStatus[2][0]) {
             if (boardStatus[0][2] == 1) {
-                result("Player X winner\nSecond Diagonal");
+                result("Player X winner");
             } else if (boardStatus[0][2] == 0) {
-                result("Player 0 winner\nSecond Diagonal");
+                result("Player 0 winner");
             }
         }
     }
